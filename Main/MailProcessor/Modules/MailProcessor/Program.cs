@@ -12,7 +12,7 @@ namespace MailProcessor
     {
         static void Main(string[] args)
         {
-            ExchangeService service = ExchangeConnector.Connect("mail@c2dev.onmicrosoft.com", "password18#");
+            ExchangeService service = ExchangeConnector.Connect("mail@c2dev.onmicrosoft.com", "butelka100#");
         }
     }
 }

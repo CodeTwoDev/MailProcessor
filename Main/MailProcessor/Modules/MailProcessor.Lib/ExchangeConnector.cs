@@ -31,9 +31,9 @@ namespace MailProcessor.Lib.Exchange
 
             // Specify user credentials
             service.Credentials = new NetworkCredential(strEmailAddress, strPassword);
-
+            service.Url = new Uri(@"https://outlook.office365.com/EWS/Exchange.asmx");
             // Use Office 365 Autodiscover URL
-            service.AutodiscoverUrl(strEmailAddress, RedirectionUrlValidationCallback);
+            //service.AutodiscoverUrl(strEmailAddress, RedirectionUrlValidationCallback);
             return service;
         }
         /// <summary>
